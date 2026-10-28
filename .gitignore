@@ -1,0 +1,33 @@
+# ---------- secrets / local config (never commit) ----------
+# real DB password lives here -> never committed (template: application.properties.example)
+backend/src/main/resources/application.properties
+application-local.properties
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+
+# ---------- build output ----------
+backend/target/
+target/
+frontend/dist/
+node_modules/
+*.jar
+*.class
+
+# ---------- logs ----------
+*.log
+npm-debug.log*
+
+# ---------- IDE / OS ----------
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db
